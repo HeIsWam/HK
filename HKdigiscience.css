@@ -113,7 +113,7 @@ main .tab {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
-  width: 15%;
+  width: 20%;
   overflow-y: scroll;
   position: fixed;
   top: 80px;
@@ -122,7 +122,7 @@ main .tab {
 
 main .tab-content {
   width: 100%;
-  margin-left: 15%;
+  margin-left: 20%;
   margin-top: 80px;
 }
 
@@ -291,7 +291,7 @@ footer h4 {
   }
   main .tab-content {
     width: 100%;
-    margin-left: 15%;
+    margin-left: 20%;
     margin-top: 80px;
   }
   main .tab button {
