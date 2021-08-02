@@ -200,6 +200,7 @@
         function OpenIt() {
             var z = document.getElementById("side-tab");
                 z.style.display="block";
+                z.style.position="absolute";
                 //z.style.width="30%";
                 document.getElementById("menu-bar").style.display="none";
                 document.getElementById("close-bar").style.display="inline-block";
@@ -208,6 +209,7 @@
        function CloseIt() {
             var z = document.getElementById("side-tab");
                 z.style.display="none";
+                z.style.position="fixed";
                 //z.style.width="15%";
                 document.getElementById("close-bar").style.display="none";
                 document.getElementById("menu-bar").style.display="inline-block";
