@@ -18,7 +18,8 @@
 
     <nav>
         <div id="nav-bar">
-            <button id="menu-bar" onclick="OpenClose()"><i class="fa fa-bars"></i> </button>
+            <button id="menu-bar" onclick="OpenIt()"><i class="fa fa-bars"></i> </button>
+            <button id="close-bar" onclick="CloseIt()"><i class="fa fa-close"></i> </button>
             <!-- <div id="logo-bar"> -->
             <img src="hk.jpg" alt="HK logo">
             <span id="title-name"> Digi Science .edu</span>
@@ -32,13 +33,14 @@
     <main>
         <div class="tab" id="side-tab">
             <ul>
+                <label for="tablinks"> Physics </label>
                 <li><button class="tablinks" onclick="openCity(event, 'London')">Multiplication of Vectors</button></li>
                 <li><button class="tablinks" onclick="openCity(event, 'Paris')">Parallelogram of Vectors</button></li>
                 <li><button class="tablinks" onclick="openCity(event, 'Tokyo')">Principle of Homogeneity</button></li>
                 <li><button class="tablinks" onclick="openCity(event, 'units')">Units and Dimensions</button></li>
+                <li><button class="tablinks" onclick="openCity(event, 'universal')">Universal Law of Gravitation</button></li>
+                <label for="tablinks"> Chemistry </label>
                 <li><button class="tablinks" onclick="openCity(event, 'becl')">Formation of BeCl2 iconic</button></li>
-                <li><button class="tablinks" onclick="openCity(event, 'universal')">Universal Law of
-                        Gravitation</button></li>
             </ul>
         </div>
 
@@ -194,12 +196,21 @@
 
         }
 
-        //Open Close the Side Bar
-        function OpenClose() {
+        //Open the Side Bar
+        function OpenIt() {
             var z = document.getElementById("side-tab");
-            if (z.style.display != "none") {
                 z.style.display="absolute";
+                z.style.width="30%";
+                document.getElementById("menu-bar").style.display="none";
+                document.getElementById("close-bar").style.display="inline-block";
             }
+       //Close the Side Bar
+       function CloseIt() {
+            var z = document.getElementById("side-tab");
+                z.style.display="absolute";
+                z.style.width="0%";
+                document.getElementById("close-bar").style.display="none";
+                document.getElementById("menu-bar").style.display="inline-block";
         }
 
     </script>
