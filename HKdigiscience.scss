@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+#nav-bar{
+    background: white;
+    box-shadow: 0px 0px 5px 2px lightgray;
+    text-align: left;
+    height: 80px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    #menu-bar{
+        // visibility: hidden;
+        display: none;
+        margin: 5px;
+        background: white;
+        border: 0px;
+        border-radius:30px;
+        font-size: 20px;
+    }
+    #menu-bar:active{
+        background:lightgray;
+    }
+    img{
+        position: relative;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        margin: auto 10px;
+    }
+    #title-name{
+        font-size: 30px;
+        font-family: 'Lobster', cursive;
+    }
+    #empty{
+        flex: 5;
+    }
+    #youtube-btn{
+        padding: 10px 10px;
+        margin: 10px;
+        border-radius: 20px;
+        background: red;
+        a{
+            color: white;
+        }
+    }
+}
+main{
+    display: flex;
+ul{
+    padding: 0px;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+    /* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 15%;
+    overflow-y: scroll;
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+}
+.tab-content{
+    width: 100%;
+    margin-left: 15%;
+    margin-top: 80px;
+}
+  /* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    // float: left;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: left;
+    padding: 10px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+  
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd; 
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    text-align: center;
+
+    iframe{
+        box-shadow: 0px 0px 6px 3px black;
+    }
+    p{
+        text-align: left;
+        font-size: 18px;
+        padding: 10px 25px;
+        line-height: 1.5em;
+    }
+    h2,h3,h4,h5,h6{
+        text-align: left;
+        padding: 0px 10px;
+    }
+    }
+}
+footer{
+    display: none;
+    height: 80px;
+    background: lightgray;
+    text-align: center;
+    color: #282A35;
+    a{
+        text-decoration: none;
+        color: #282A35;
+    }
+    .fa{
+        font-size: 22px;
+        padding: 2px;
+    }
+    h4{
+        margin: 0px 10px;
+        font-size: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 820px) {
+    #nav-bar #menu-bar {
+        display: inline;
+    }
+    main .tab {
+        display: none;
+    }
+    main .tab-content{
+        margin-left: 0%;
+    }
+    iframe{
+        height:280px ;
+    }
+
+}
+@media screen and (max-width: 500px) {
+    #nav-bar #menu-bar {
+        display: block;
+        font-size: 20px;
+    }
+    #nav-bar img{
+        width: 40px;
+        height: 40px;
+    }
+    #nav-bar #title-name{
+        font-size: 20px;
+    }
+    main .tab {
+        display: none;
+    }
+    main .tab-content{
+        margin-left: 0%;
+    }
+    #nav-bar #youtube-btn{
+        font-size: 20px;
+    }
+    #nav-bar #youtube-btn span{
+        display: none;
+    }
+    iframe{
+        height:240px ;
+        width: 90%;
+    }
+}
