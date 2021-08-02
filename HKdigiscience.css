@@ -283,7 +283,7 @@ footer h4 {
     display:block;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
-    width: 15%;
+    width: 20%;
     overflow-y: scroll;
     position: fixed;
     top: 80px;
@@ -359,7 +359,7 @@ footer h4 {
     display: inline;
   }
   main .tab {
-    width: 0%;
+    width: 20%;
   }
   main .tab-content {
     margin-left: 0%;
@@ -385,7 +385,7 @@ footer h4 {
     font-size: 22px;
   }
   main .tab {
-    width: 0%;
+    width: 20%;
   }
   main .tab-content {
     margin-left: 0%;
