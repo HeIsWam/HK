@@ -280,6 +280,7 @@ footer h4 {
   }
   main .tab {
     overflow: hidden;
+    display:block;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
     width: 15%;
